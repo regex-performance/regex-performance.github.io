@@ -1,0 +1,44 @@
+<html>
+<head>
+  <title>Regex with Vue.js</title>
+  <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+  <div id="app">
+    <h1>Regex with Vue.js</h1>
+    <p>
+      <label for="regex">regex:</label>
+      <input id="regex" v-model="regex">
+    </p>
+    <p>
+      <label for="input" >input:</label>
+      <input id="input" v-model="input">
+    </p>
+    <p>
+      {{ valid }}
+    </p>
+  </div>
+
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data () {
+        return {
+          regex: '^[0-9]{3}-[0-9]{3}$',
+          input: ''
+        }
+      },
+      computed: {
+        valid () {
+          try {
+            const pattern = new RegExp(this.regex);
+            return pattern.test(this.input)
+          } catch(e) {
+            return false;
+          }
+        }
+      }
+    })
+  </script>
+</body>
+</html>
