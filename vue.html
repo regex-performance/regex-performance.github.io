@@ -1,19 +1,20 @@
 <html>
+<meta charset="UTF-8">
 <head>
-  <title>Regex with Vue.js</title>
+  <title>Wyszukiwarka działań</title>
   <script src="vue.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class='container' id='app'>
     <div class='form'>
-      <h1>Math riddle finder</h1>
+      <h1>Wyszukiwarka działań matematycznych</h1>
       <p>
-        <label for="regex">pattern:</label>
+        <label for="regex">Wzorzec:</label>
         <input id="regex" v-model="regex"/>
       </p>
       <p>
-        <label for="input" >input:</label>
+        <label for="input" >Tekst:</label>
         <textarea id="input" v-model="input" rows=4 cols=70></textarea>
       </p>
       <p>
@@ -36,7 +37,10 @@
           try {
             const pattern = new RegExp(this.regex);
             console.log("Matching...", this.input);
-            return this.input.match(pattern)[0];
+            console.time('match');
+            var match = this.input.match(pattern);
+            console.timeEnd('match');
+            return match[0];
           } catch(e) {
             return '';
           }
