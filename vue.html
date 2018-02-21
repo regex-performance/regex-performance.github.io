@@ -1,0 +1,48 @@
+<html>
+<head>
+  <title>Regex with Vue.js</title>
+  <script src="vue.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class='container' id='app'>
+    <div class='form'>
+      <h1>Math riddle finder</h1>
+      <p>
+        <label for="regex">pattern:</label>
+        <input id="regex" v-model="regex"/>
+      </p>
+      <p>
+        <label for="input" >input:</label>
+        <textarea id="input" v-model="input" rows=4 cols=70></textarea>
+      </p>
+      <p>
+        {{ matched }}
+      </p>
+    </div>
+  </div>
+
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data () {
+        return {
+          regex: '(\\d+[+-]?)+=',
+          input: ''
+        }
+      },
+      computed: {
+        matched () {
+          try {
+            const pattern = new RegExp(this.regex);
+            console.log("Matching...", this.input);
+            return this.input.match(pattern)[0];
+          } catch(e) {
+            return '';
+          }
+        }
+      }
+    })
+  </script>
+</body>
+</html>
