@@ -1,0 +1,52 @@
+<html>
+<meta charset="UTF-8">
+<head>
+  <title>Math Operations Detector</title>
+  <script src="vue.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class='container' id='app'>
+    <div class='form'>
+      <h1>Math Operations Detector</h1>
+      <p>
+        <label for="regex">Pattern:</label>
+        <input id="regex" v-model="regex"/>
+      </p>
+      <p>
+        <label for="input" >Text:</label>
+        <textarea id="input" v-model="input" rows=4 cols=70></textarea>
+      </p>
+      <p>
+        {{ matched }}
+      </p>
+    </div>
+  </div>
+
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data () {
+        return {
+          regex: '(\\d+[+-]?)+=',
+          input: ''
+        }
+      },
+      computed: {
+        matched () {
+          try {
+            const pattern = new RegExp(this.regex);
+            console.log("Matching...", this.input);
+            console.time('match');
+            var match = this.input.match(pattern);
+            console.timeEnd('match');
+            return match[0];
+          } catch(e) {
+            return '';
+          }
+        }
+      }
+    })
+  </script>
+</body>
+</html>
