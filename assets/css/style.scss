@@ -1,0 +1,34 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+$backgroundColor: #cdcdcd;
+$mainColor: #1e1e41;
+$headingColor: #0a3c9b;
+$mainFont: 'Fira Sans Condensed Light', 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont: 'Rubik Black', 'Source Sans Pro', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #e6460a;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: #fe8558;
+
+body {
+  background-color: $backgroundColor;
+  color: $mainColor;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $headingColor;
+}
+
+a {
+  color: $linkColor;
+}
+
+a:hover {
+  color: $linkColorHover: lighten( $linkColor, 15% );
+}
