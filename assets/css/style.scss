@@ -19,10 +19,12 @@ $selectionBackgroundColor: #fe8558;
 body {
   background-color: $backgroundColor;
   color: $mainColor;
+  font-family: $mainFont;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: $headingColor;
+  font-family: $headingFont;
 }
 
 a {
