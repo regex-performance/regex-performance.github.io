@@ -2,7 +2,7 @@
   
 ## Exercise 1
 <!--![](img/qr/spa/greedy.jpeg) -->
-https://link.do/spa-greedy
+[https://link.do/spa-greedy](https://link.do/spa-greedy)
 
 Match HTML tags. 
 
@@ -17,7 +17,7 @@ Hints:
 * `[XYZ]` character set, `[^XYZ]` negated character set
 
 ## Exercise 2
-https://link.do/spa-possessive
+[https://link.do/spa-possessive](https://link.do/spa-possessive)
 
 Match numbers with units ending with semicolon: `123cm; 32kg; 1m3;` 
 
@@ -34,9 +34,9 @@ Hints:
 
 ## Exercise 3
 Optimize those two expressions:
- 1. Match `Tea` column in CSV text: https://link.do/spa-csv
+ 1. Match `Tea` column in CSV text: [https://link.do/spa-csv](https://link.do/spa-csv)
  2. (\*) Find some CSS classes related to product: `product-size, product-column, product-info`
-and product ids that has digits 1,2,3. https://link.do/spa-css
+and product ids that has digits 1,2,3. [https://link.do/spa-css](https://link.do/spa-css)
 
 Hints:
 * `^` beginning of the line
@@ -44,7 +44,7 @@ Hints:
 * `X{6}` repeat 6 times
 
 ### Exercise 5 (\*)
-https://link.do/spa-operations
+[https://link.do/spa-operations](https://link.do/spa-operations)
 
 Arithmetic operations.
 
