@@ -61,14 +61,28 @@ separated with plus or minus sign, ending with equals sign, e.g. `12+34=` or `32
 
 ## References
 * Mastering Regular Expressions, 3rd Edition, Jefferey Friedl, 2009
-* http://www.rexegg.com
-* https://www.regular-expressions.info
-* https://regex101.com/
-* [Russ Cox](https://swtch.com/~rsc/regexp/regexp1.html) and next parts (1-4)
-* [test app - original](https://github.com/kszubrycht/regex-with-vuejs) thanks to [Kamil Szubrycht](https://github.com/kszubrycht)
-* [OWASP ReDoS](https://www.owasp.org/index.php/Regular_expression_Denial_of_Service_-_ReDoS)
-* [Loggly: 5 techniquess](https://www.loggly.com/blog/five-invaluable-techniques-to-improve-regex-performance/)
-* [Loggly: regexes bad better...](https://www.loggly.com/blog/regexes-the-bad-better-best/)
+* [Regex101 - online regex tester and debugger](https://regex101.com/)
+* [Test app - original](https://github.com/kszubrycht/regex-with-vuejs) thanks to [Kamil Szubrycht](https://github.com/kszubrycht)
+* [RexEgg - Regex Tutorial](http://www.rexegg.com), especially:
+ * [Explosive quantifiers](http://www.rexegg.com/regex-explosive-quantifiers.html)
+ * [Mastering quantifiers](http://www.rexegg.com/regex-quantifiers.html)
+* [regular-expressions.info](https://www.regular-expressions.info):
+  * [Possesive quantifiers](https://www.regular-expressions.info/possessive.html)
+  * [Catastrophic backtracking](https://www.regular-expressions.info/catastrophic.html)
+  * [Regex engine internals](https://www.regular-expressions.info/engine.html)
+* [Russ Cox regex series]
+  * [Regular Expression Matching Can Be Simple And Fast](https://swtch.com/~rsc/regexp/regexp1.html)
+  * [Regular Expression Matching: the Virtual Machine Approach](https://swtch.com/~rsc/regexp/regexp2.html)
+  * [Regular Expression Matching in the Wild](https://swtch.com/~rsc/regexp/regexp3.html)
+  * [Regular Expression Matching with a Trigram Index](https://swtch.com/~rsc/regexp/regexp4.html)
+* [OWASP on ReDoS](https://www.owasp.org/index.php/Regular_expression_Denial_of_Service_-_ReDoS)
+* Loggly:
+  * [Five invaluable techniques to improve regex performance](https://www.loggly.com/blog/five-invaluable-techniques-to-improve-regex-performance/)
+  * [Regexes bad, better, best](https://www.loggly.com/blog/regexes-the-bad-better-best/)
 * [Katafrakt: Regular expression how do they work?](http://katafrakt.me/2016/07/06/regular-expressions/)
 * [The true power of regular expressions](http://nikic.github.io/2012/06/15/The-true-power-of-regular-expressions.html)
 * [FlashText algorithm vs regular epxressions for keyword matching](https://www.analyticsvidhya.com/blog/2017/11/flashtext-a-library-faster-than-regular-expressions/)
+* [Sam Safron: Debugging 100% CPU usage in production Ruby on Rails systems](https://samsaffron.com/archive/2018/01/18/my-production-ruby-on-rails-cpu-is-at-100-now-what
+)
+* [Mimicking atomic groups in JS regex](http://blog.stevenlevithan.com/archives/mimic-atomic-groups)
+
