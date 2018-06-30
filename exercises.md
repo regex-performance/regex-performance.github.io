@@ -64,8 +64,8 @@ separated with plus or minus sign, ending with equals sign, e.g. `12+34=` or `32
 * [Regex101 - online regex tester and debugger](https://regex101.com/)
 * [Test app - original](https://github.com/kszubrycht/regex-with-vuejs) thanks to [Kamil Szubrycht](https://github.com/kszubrycht)
 * [RexEgg - Regex Tutorial](http://www.rexegg.com), especially:
- * [Explosive quantifiers](http://www.rexegg.com/regex-explosive-quantifiers.html)
- * [Mastering quantifiers](http://www.rexegg.com/regex-quantifiers.html)
+  * [Explosive quantifiers](http://www.rexegg.com/regex-explosive-quantifiers.html)
+  * [Mastering quantifiers](http://www.rexegg.com/regex-quantifiers.html)
 * [regular-expressions.info](https://www.regular-expressions.info):
   * [Possesive quantifiers](https://www.regular-expressions.info/possessive.html)
   * [Catastrophic backtracking](https://www.regular-expressions.info/catastrophic.html)
