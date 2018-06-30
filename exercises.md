@@ -69,6 +69,7 @@ separated with plus or minus sign, ending with equals sign, e.g. `12+34=` or `32
 * [FlashText algorithm vs regular epxressions for keyword matching](https://www.analyticsvidhya.com/blog/2017/11/flashtext-a-library-faster-than-regular-expressions/)
 * [Sam Safron: Debugging 100% CPU usage in production Ruby on Rails systems](https://samsaffron.com/archive/2018/01/18/my-production-ruby-on-rails-cpu-is-at-100-now-what
 )
+* [Jeff Atwood: Regex performance](https://blog.codinghorror.com/regex-performance/)
 * [Mimicking atomic groups in JS regex](http://blog.stevenlevithan.com/archives/mimic-atomic-groups)
 * [RexEgg - Regex Tutorial](http://www.rexegg.com), especially:
   * [Explosive quantifiers](http://www.rexegg.com/regex-explosive-quantifiers.html)
