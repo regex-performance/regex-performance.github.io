@@ -10,10 +10,10 @@
 
 Match HTML tags. 
 
-1. Add text inside/after the tag, see if step count changes; see debugger </li>
-2. Add another tag, see the result</li>
-3. Two solutions: limit repetition `.*?`, limit scope `[^>]` </li>
-4. Try both, add text inside/after the tag, see step count changes </li>
+1. Add text inside/after the tag, see if step count changes; see debugger
+2. Add another tag, see the result
+3. Two solutions: limit repetition using lazy quantifier `.*?`, or limit scope `[^>]`
+4. Try both, add text inside/after the tag, see step count changes
 
 Hints:
 * `X*` greedy quantifier
@@ -26,9 +26,9 @@ Hints:
 Match numbers with units ending with semicolon: `123cm; 32kg; 1m3;` 
 
 
-1.  Try to add digits to the number  </li>
-2.  Remove semicolon - see steps and backtracking in debugger</li>
-3.  Replace greedy quantifier with the possessive one `++`, see steps in debugger  </li>
+1.  Try to add digits to the number 
+2.  Remove semicolon - see steps and backtracking in debugger
+3.  Replace greedy quantifier with the possessive one `++`, see steps in debugger
 
 Hints:
 * `\d` digit
