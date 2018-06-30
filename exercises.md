@@ -70,7 +70,7 @@ separated with plus or minus sign, ending with equals sign, e.g. `12+34=` or `32
   * [Possesive quantifiers](https://www.regular-expressions.info/possessive.html)
   * [Catastrophic backtracking](https://www.regular-expressions.info/catastrophic.html)
   * [Regex engine internals](https://www.regular-expressions.info/engine.html)
-* [Russ Cox regex series]
+* Russ Cox regex series:
   * [Regular Expression Matching Can Be Simple And Fast](https://swtch.com/~rsc/regexp/regexp1.html)
   * [Regular Expression Matching: the Virtual Machine Approach](https://swtch.com/~rsc/regexp/regexp2.html)
   * [Regular Expression Matching in the Wild](https://swtch.com/~rsc/regexp/regexp3.html)
