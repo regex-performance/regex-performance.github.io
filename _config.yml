@@ -1,3 +1,6 @@
 theme: jekyll-theme-minimal
 title: Writing slow regexp is easier than you think (and want it to be)
 description: Maciek Rząsa, <a href="https://twitter.com/mjrzasa">@mjrzasa</a>, <a href="https://textmaster.com">TextMaster</a>
+site:
+  github:
+    owner_url: https://github.com/mrzasa
