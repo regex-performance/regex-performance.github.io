@@ -43,7 +43,7 @@ Hints:
 * `(?:...)` non-capturing group
 * `X{6}` repeat 6 times
 
-### Exercise 5 (\*)
+## Exercise 5 (\*)
 [https://link.do/spa-operations](https://link.do/spa-operations)
 
 Arithmetic operations.
