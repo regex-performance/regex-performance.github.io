@@ -1,58 +1,49 @@
-# Regex Performance
-
+# Regex Performance Exercises
   
 ## Exercise 1
 <!--![](img/qr/spa/greedy.jpeg) -->
-Match HTML tags. | https://link.do/spa-greedy
-<ol>
-  <li> Add text inside/after the tag, see if step count changes; see debugger </li>
-  <li> Add another tag, see the result</li>
-  <li> Two solutions: limit repetition `.*?`, limit scope `[^>]` </li>
-  <li> Try both, add text inside/after the tag, see step count changes </li>
-</ol>
+https://link.do/spa-greedy
 
-<div class='exercise-hint'>
-<div></div>
+Match HTML tags. 
+
+1. Add text inside/after the tag, see if step count changes; see debugger </li>
+2. Add another tag, see the result</li>
+3. Two solutions: limit repetition `.*?`, limit scope `[^>]` </li>
+4. Try both, add text inside/after the tag, see step count changes </li>
 
 Hints:
 * `X*` greedy quantifier
 * `X*?` lazy quantifier
 * `[XYZ]` character set, `[^XYZ]` negated character set
 
-</div>
+## Exercise 2
+https://link.do/spa-possessive
 
-### Exercise 2
+Match numbers with units ending with semicolon: `123cm; 32kg; 1m3;` 
 
-Match numbers with units ending with semicolon: `123cm; 32kg; 1m3;` | https://link.do/spa-possessive
 
-<ol>
-  <li> Try to add digits to the number  </li>
-  <li> Remove semicolon - see steps and backtracking in debugger</li>
-  <li> Replace greedy quantifier with the possessive one `++`, see steps in debugger  </li>
-</ol>
-
-<div class='exercise-hint'>
-<div></div>
+1.  Try to add digits to the number  </li>
+2.  Remove semicolon - see steps and backtracking in debugger</li>
+3.  Replace greedy quantifier with the possessive one `++`, see steps in debugger  </li>
 
 Hints:
 * `\d` digit
 * `\w` word character (digit, letter, underscore)
 * `X++` possessive quantifier
 
-</div>
 
-### Exercise 3
+## Exercise 3
 Optimize those two expressions:
  1. Match `Tea` column in CSV text: https://link.do/spa-csv
- 2. (*) Find some CSS classes related to product: `product-size, product-column, product-info`
+ 2. (\*) Find some CSS classes related to product: `product-size, product-column, product-info`
 and product ids that has digits 1,2,3. https://link.do/spa-css
 
-Hints
+Hints:
 * `^` beginning of the line
 * `(?:...)` non-capturing group
 * `X{6}` repeat 6 times
 
-### Exercise 5 (*)
+### Exercise 5 (\*)
 https://link.do/spa-operations
 
 Arithmetic operations.
