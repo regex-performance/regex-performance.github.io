@@ -1,6 +1,6 @@
 theme: jekyll-theme-minimal
-title: Writing slow regexp is easier than you think (and want it to be)
-description: Maciek Rząsa, <a href="https://twitter.com/mjrzasa">@mjrzasa</a>, <a href="https://textmaster.com">TextMaster</a>
+title: I can kill your browser with a simple regex
+description: Maciek Rząsa, <a href="https://twitter.com/mjrzasa">@mjrzasa</a>, <a href="https://toptal.com">Toptal</a>
 google_analytics: UA-121670409-1
 site:
   github:

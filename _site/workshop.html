@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Part 1: Warm-up | I can kill your browser with a simple regex</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Part 1: Warm-up" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Maciek Rząsa, @mjrzasa, Toptal" />
+<meta property="og:description" content="Maciek Rząsa, @mjrzasa, Toptal" />
+<link rel="canonical" href="http://localhost:4000/workshop.html" />
+<meta property="og:url" content="http://localhost:4000/workshop.html" />
+<meta property="og:site_name" content="I can kill your browser with a simple regex" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"http://localhost:4000/workshop.html","headline":"Part 1: Warm-up","description":"Maciek Rząsa, @mjrzasa, Toptal","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=d2c97a0c90884ad42293e85f12228692b6d9942a">
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="http://localhost:4000/">I can kill your browser with a simple regex</a></h1>
+        
+        
+
+        <p>Maciek Rząsa, <a href="https://twitter.com/mjrzasa">@mjrzasa</a>, <a href="https://toptal.com">Toptal</a></p>
+
+        <p class="view"><a href="https://github.com/mrzasa">View My GitHub Profile</a></p>
+
+        
+      </header>
+      <section>
+
+      <h2 id="part-1-warm-up">Part 1: Warm-up</h2>
+
+<h3 id="1-repetition">1. Repetition</h3>
+
+<p>Match HTML tags.</p>
+
+<ol>
+  <li>Add text inside/after the tag, see if step count changes; see debugger</li>
+  <li>Add another tag, see the result</li>
+  <li>Two solutions: limit repetition using lazy quantifier <code class="language-plaintext highlighter-rouge">.*?</code>, or limit scope <code class="language-plaintext highlighter-rouge">[^&gt;]</code></li>
+  <li>Try both, add text inside/after the tag, see step count changes</li>
+</ol>
+
+<p><a href="https://regex101.com/r/exsSjf/2">Regex101</a></p>
+
+<h3 id="2-alternative">2. Alternative</h3>
+
+<p>Optimize regex that finds certain CSS classes related to product: <code class="language-plaintext highlighter-rouge">product-size, product-column, product-info</code>
+and product ids that has digits 1,2,3. <a href="https://regex101.com/r/WhQqEA/3/">Regex101</a></p>
+
+<h2 id="part-2-understanding-catastrophe">Part 2: Understanding Catastrophe</h2>
+
+<h3 id="1-arithmetic-operations">1. Arithmetic operations.</h3>
+
+<p>You have a regex matching simple arithmetic operations. Allowed: two numbers
+separated with plus or minus sign, ending with equals sign, e.g. <code class="language-plaintext highlighter-rouge">12+34=</code> or <code class="language-plaintext highlighter-rouge">32121-23=</code></p>
+
+<ol>
+  <li>Enhance regex to allow 3 numbers and 2 signs (e.g. <code class="language-plaintext highlighter-rouge">12+322-1=</code> ).</li>
+  <li>Enhance regex to allow any lenght of the operation (e.g. <code class="language-plaintext highlighter-rouge">12+322-1+223-2323+...=</code>).</li>
+  <li>Remove equals sign from the test string, check steps in debugger.</li>
+</ol>
+
+<p><a href="https://regex101.com/r/qPsP27/3/">Regex101</a></p>
+
+<p>When you’re done, go to <a href="https://regex-performance.github.io/vue-en.html">demo page</a>
+and see impact of hastily written regex on user experience. To see timing stats, open browser console. Optimize the regex (you can start in Regex101 and apply it to the demo page).</p>
+
+<h3 id="2-wrong-way-to-parse-csv">2. Wrong way to parse CSV</h3>
+
+<p>Optimize regex matching <code class="language-plaintext highlighter-rouge">Tea</code> column in CSV text: <a href="https://regex101.com/r/CAo4Xx/1/">Regex101</a></p>
+
+<h2 id="part-3-into-the-wild">Part 3: Into the Wild</h2>
+<ol>
+  <li>Analyse regex that stopped Cloudflare servers. Optimize it to remove catastrophic backtracking. <a href="https://regex101.com/r/fD4yMi/1/">Regex101</a></li>
+  <li>Analyse regex found by Sam Saffron at code written by a Discourse client. It replaces space before certain characters by HTML thin space (French typography). See how it performs on unexpected input. Optimize it. <a href="https://regex101.com/r/MDgdC6/1/">Regex101</a></li>
+  <li>Analyze regex used in a Microsoft project to match Windows username. Find an input causing catastrophic bactracking. Optimize it. <a href="https://regex101.com/r/8gaUFh/1/">Regex101</a></li>
+</ol>
+
+
+      </section>
+      <footer>
+        
+        <p>This project is maintained by <a href="https://github.com/mrzasa">mrzasa</a></p>
+        
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-121670409-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    
+  </body>
+</html>
