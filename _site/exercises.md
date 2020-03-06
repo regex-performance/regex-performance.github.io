@@ -68,7 +68,6 @@ separated with plus or minus sign, ending with equals sign, e.g. `12+34=` or `32
 * [Katafrakt: Regular expression how do they work?](http://katafrakt.me/2016/07/06/regular-expressions/)
 * [The true power of regular expressions](http://nikic.github.io/2012/06/15/The-true-power-of-regular-expressions.html)
 * [FlashText algorithm vs regular epxressions for keyword matching](https://www.analyticsvidhya.com/blog/2017/11/flashtext-a-library-faster-than-regular-expressions/)
-* [Sam Safron: Debugging 100% CPU usage in production Ruby on Rails systems](https://samsaffron.com/archive/2018/01/18/my-production-ruby-on-rails-cpu-is-at-100-now-what
 )
 * [Jeff Atwood: Regex performance](https://blog.codinghorror.com/regex-performance/)
 * [Mimicking atomic groups in JS regex](http://blog.stevenlevithan.com/archives/mimic-atomic-groups)
@@ -87,3 +86,7 @@ separated with plus or minus sign, ending with equals sign, e.g. `12+34=` or `32
 * Loggly:
   * [Five invaluable techniques to improve regex performance](https://www.loggly.com/blog/five-invaluable-techniques-to-improve-regex-performance/)
   * [Regexes bad, better, best](https://www.loggly.com/blog/regexes-the-bad-better-best/)
+* ReDoS cases
+  * [Sam Safron: Debugging 100% CPU usage in production Ruby on Rails systems](https://samsaffron.com/archive/2018/01/18/my-production-ruby-on-rails-cpu-is-at-100-now-what)
+  * [CloudFlare postmortem (2019)](https://blog.cloudflare.com/details-of-the-cloudflare-outage-on-july-2-2019/)
+  * [StackOverflow postmortem (2016)](https://stackstatus.net/post/147710624694/outage-postmortem-july-20-2016)
