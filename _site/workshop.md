@@ -125,6 +125,7 @@ Analyze regex used in a Microsoft project to match Windows username. Find an inp
   * [Sam Safron: Debugging 100% CPU usage in production Ruby on Rails systems](https://samsaffron.com/archive/2018/01/18/my-production-ruby-on-rails-cpu-is-at-100-now-what)
   * [CloudFlare postmortem (2019)](https://blog.cloudflare.com/details-of-the-cloudflare-outage-on-july-2-2019/)
   * [StackOverflow postmortem (2016)](https://stackstatus.net/post/147710624694/outage-postmortem-july-20-2016)
+  * [Atom editor (2016)](http://davidvgalbraith.com/how-i-fixed-atom/)
 * ReDoS research (Virginia Tech):
   * [Blogpost](https://medium.com/bugbountywriteup/introduction-987fdc4c7b0)
   * [Paper](http://people.cs.vt.edu/~davisjam/downloads/publications/DavisCoghlanServantLee-EcosystemREDOS-ESECFSE18.pdf)
