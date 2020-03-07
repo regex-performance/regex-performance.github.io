@@ -9,7 +9,7 @@ Test those two simple pages that uses regex:
 
 ## Part 1: Warm-up
 
-### 1. Repetition
+### 1.1. Repetition
 
 [Regex101](https://regex101.com/r/exsSjf/2)<br />
 You need to match HTML tags. (In general case it's [a bad idea](https://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags/1732454#1732454) to use regex for HTML parsing, but it's a good learning example).
@@ -20,7 +20,7 @@ You need to match HTML tags. (In general case it's [a bad idea](https://stackove
 
 
 
-### 2. Alternative
+### 1.2. Alternative
 [Regex101](https://regex101.com/r/WhQqEA/3/)<br />
 Optimize regex that finds certain CSS classes related to product: `product-size, product-column, product-info`
 and product ids that has digits 1,2,3.
@@ -28,14 +28,22 @@ and product ids that has digits 1,2,3.
 
 ## Part 2: Understanding Catastrophe
 
-### 0. Artificial example
+### 2.1. Exponential
 
 [Regex101](https://regex101.com/r/MosMwT/1/) <br />
 Watch the step count and the debugger while doing those changes:
 1. Add more `a` at the beginning
 2. Remove `b`
 
-### 1. Arithmetic operations.
+### 2.2. _Just_ Polynomial
+
+[Regex101](https://regex101.com/r/uR8GD6/2/) <br />
+Watch the step count and the debugger while doing those changes:
+1. Add more `a` at the beginning
+2. Remove `b`, add more `a`.
+
+
+### 2.3. Arithmetic operations.
 
 [Regex101](https://regex101.com/r/qPsP27/3/)<br />
 You have a regex matching simple arithmetic operations. Allowed: two numbers
@@ -48,7 +56,7 @@ separated with plus or minus sign, ending with equals sign, e.g. `12+34=` or `32
 When you're done, go to the [editable regex demo page](https://regex-performance.github.io/vue-en.html)
 and see impact of hastily written regex on user experience. To see timing stats, open browser console. Optimize the regex (you can start in Regex101 and apply it to the demo page).
 
-### 3. Wrong way to parse CSV
+### 2.4. Wrong way to parse CSV
 
 [Regex101](https://regex101.com/r/CAo4Xx/1/)<br />
 You have a regex matching 6th column (`Tea`) in CSV file (again, there are better ways to parse CSV...). It's rather slow even for valid input. Optimize it.
@@ -56,15 +64,15 @@ You have a regex matching 6th column (`Tea`) in CSV file (again, there are bette
 ## Part 3: Into the Wild
 
 
-### 1. Cloudflare
+### 3.1. Cloudflare
 [Regex101](https://regex101.com/r/fD4yMi/2/) <br />
 Analyse regex that stopped Cloudflare servers. Optimize it to remove catastrophic backtracking.
 
-### 2. Discourse customer
+### 3.2. Discourse customer
 [Regex101](https://regex101.com/r/MDgdC6/1/) <br />
 Analyse regex found by Sam Saffron at code written by a Discourse client. It replaces space before certain characters by HTML thin space (French typography). See how it performs on unexpected input. Optimize it.
 
-### 3. Microsoft
+### 3.3. Microsoft
 [Regex101](https://regex101.com/r/8gaUFh/1/) <br />
 Analyze regex used in a Microsoft project to match Windows username. Find an input causing catastrophic bactracking. Optimize it.
 
@@ -126,6 +134,7 @@ Analyze regex used in a Microsoft project to match Windows username. Find an inp
   * [Sam Safron: Debugging 100% CPU usage in production Ruby on Rails systems](https://samsaffron.com/archive/2018/01/18/my-production-ruby-on-rails-cpu-is-at-100-now-what)
   * [CloudFlare postmortem (2019)](https://blog.cloudflare.com/details-of-the-cloudflare-outage-on-july-2-2019/)
   * [StackOverflow postmortem (2016)](https://stackstatus.net/post/147710624694/outage-postmortem-july-20-2016)
+  * [Rack (Ruby web server interface)](https://github.com/rack/rack/pull/242)
   * [Atom editor (2016)](http://davidvgalbraith.com/how-i-fixed-atom/)
 * ReDoS research (Virginia Tech):
   * [Blogpost](https://medium.com/bugbountywriteup/introduction-987fdc4c7b0)
