@@ -1,5 +1,7 @@
 # Regex Optimization Exercises
 
+[Presentation](https://speakerdeck.com/mrzasa/i-can-kill-your-browser-with-a-simple-regexp-workshop)
+
 ## Intro
 
 Test those two simple pages that uses regex:
