@@ -138,6 +138,12 @@ Analyze regex used in a Microsoft project to match Windows username. Find an inp
   * [StackOverflow postmortem (2016)](https://stackstatus.net/post/147710624694/outage-postmortem-july-20-2016)
   * [Rack (Ruby web server interface)](https://github.com/rack/rack/pull/242)
   * [Atom editor (2016)](http://davidvgalbraith.com/how-i-fixed-atom/)
-* ReDoS research (Virginia Tech):
-  * [Blogpost](https://medium.com/bugbountywriteup/introduction-987fdc4c7b0)
-  * [Paper](http://people.cs.vt.edu/~davisjam/downloads/publications/DavisCoghlanServantLee-EcosystemREDOS-ESECFSE18.pdf)
+* ReDoS research:
+  * [Virginia Tech Blogpost](https://medium.com/bugbountywriteup/introduction-987fdc4c7b0)
+  * [Virginia Tech Paper](http://people.cs.vt.edu/~davisjam/downloads/publications/DavisCoghlanServantLee-EcosystemREDOS-ESECFSE18.pdf
+  * [SoK: Demystifying Regular Expression Denial of Service](https://arxiv.org/html/2406.11618v1) ReDoS survey
+* Optimisations
+  * [Using Selective Memoization to Defeat Regular Expression Denial of Service (ReDoS)](https://ieeexplore.ieee.org/document/9519427)
+  * [Ruby Core: memoisation](https://bugs.ruby-lang.org/issues/19104)
+  * V8 (JavaScript) optimisations: [1](https://v8.dev/blog/regexp-tier-up), [2](https://v8.dev/blog/speeding-up-regular-expressions)
+  * [.Net](https://devblogs.microsoft.com/dotnet/regular-expression-improvements-in-dotnet-7/)
